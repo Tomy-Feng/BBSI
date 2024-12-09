@@ -11,5 +11,4 @@ B = sparse(row,column,imag(value),n,n);
 
 x = [4 85 196]; % your selected elements
 [T1, H, T2, s] = sparse_to_block(B, x);
-invB = invb(T1, H, T2);
-toc
+invB = invb(T1, H, T2); 
