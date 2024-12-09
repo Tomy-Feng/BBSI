@@ -9,7 +9,7 @@ n = length(Ybus);
 A = sparse(row,column,real(value),n,n);
 B = sparse(row,column,imag(value),n,n);
 
-x = [4 85 ]; % your selected elements
+x = [4 85 196]; % your selected elements
 [T1, H, T2, s] = sparse_to_block(B, x);
 invB = invb(T1, H, T2);
 toc
